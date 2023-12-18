@@ -1,0 +1,252 @@
+{
+  "adslide": [
+    {
+      "id": 0,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/867/231200000417867.jpg?cVer=15025942"
+    },
+    {
+      "id": 1,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/869/231200000417869.jpg?cVer=15025954"
+    },
+    {
+      "id": 2,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/043/00/231200000420043.jpg"
+    },
+    {
+      "id": 3,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/873/231200000417873.jpg?cVer=15030014"
+    },
+    {
+      "id": 4,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/044/231200000420044.jpg"
+    },
+    {
+      "id": 5,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/882/231200000417882.jpg?cVer=15030032"
+    },
+    {
+      "id": 6,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/883/231200000417883.jpg?cVer=15030051"
+    },
+    {
+      "id": 7,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/878/231200000417878.jpg?cVer=15030105"
+    }
+  ],
+  "categoryThumbnail": [
+    {
+      "id": 0,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/442/00/210800000179442.png?cVer=22104612",
+      "title": "전체"
+    },
+    {
+      "id": 1,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/482/00/210800000179482.jpg?cVer=07030110",
+      "title": "스낵"
+    },
+    {
+      "id": 2,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/472/00/210800000179472.jpg?cVer=05035909",
+      "title": "주방용품"
+    },
+    {
+      "id": 3,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/473/00/210800000179473.jpg?cVer=05040004",
+      "title": "조리용품"
+    },
+    {
+      "id": 4,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/474/00/210800000179474.jpg?cVer=05040025",
+      "title": "욕실/청소"
+    },
+    {
+      "id": 5,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/475/00/210800000179475.jpg?cVer=05040051",
+      "title": "생활용품"
+    },
+    {
+      "id": 6,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/478/00/210800000179478.jpg?cVer=05040110",
+      "title": "침구/패브릭"
+    },
+    {
+      "id": 7,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/479/00/210800000179479.jpg?cVer=05040128",
+      "title": "뷰티/위생"
+    },
+    {
+      "id": 8,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/455/00/210800000179455.jpg?cVer=05040147",
+      "title": "슬립웨어"
+    },
+    {
+      "id": 9,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/456/00/210800000179456.jpg?cVer=05040206",
+      "title": "언더웨어"
+    },
+    {
+      "id": 10,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/457/00/210800000179457.jpg?cVer=05040225",
+      "title": "여성패션"
+    },
+    {
+      "id": 11,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/458/00/210800000179458.jpg?cVer=05040241",
+      "title": "남성패션"
+    },
+    {
+      "id": 12,
+      "img": "https://image.sivillage.com/upload/C00001/dspl/banner/90/471/00/210800000179471.jpg?cVer=05040300",
+      "title": "패션잡화"
+    }
+  ],
+  "new": [
+    {
+      "id": 0,
+      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/814/231201007256814.jpg",
+      "title": "다크초코볼 아몬드",
+      "price": 1000
+    },
+    {
+      "id": 1,
+      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/810/231201007256810.jpg?RS=232&SP=1",
+      "title": "다크초코볼 크리스피",
+      "price": 1000
+    },
+    {
+      "id": 2,
+      "img": "https://image.sivillage.com/upload/C00001/goods/org/340/230930006496340.jpg?RS=232&SP=1",
+      "title": "우리꿀 우리찹쌀약과",
+      "price": 3500
+    },
+    {
+      "id": 3,
+      "img": "https://image.sivillage.com/upload/C00001/goods/org/472/220526002561472.jpg?RS=232&SP=1",
+      "title": "자주 생각나는 고소한 김맛나",
+      "price": 2500
+    },
+    {
+      "id": 4,
+      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/562/231128007222562.jpg?RS=232&SP=1",
+      "title": "병아리 콩과 쌀로 만든 한 입 크기 뻥튀기",
+      "price": 1900
+    },
+    {
+      "id": 5,
+      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/593/231129007232593.jpg?RS=232&SP=1",
+      "title": "오래오래 따듯한 핫팩_10개입",
+      "price": 7900
+    },
+    {
+      "id": 6,
+      "img": "https://image.sivillage.com/upload/C00001/goods/org/902/231109006988902.jpg?RS=232&SP=1",
+      "title": "생과일 그대로 100% 믹스칩_파인&망고",
+      "price": 3500
+    }
+  ],
+  "recommand": [
+    {
+      "id": 0,
+      "img": "",
+      "title": "우리꿀 우리찹쌀약과",
+      "price": 3500,
+      "star": 5,
+      "review": 9,
+      "des": ["우리밀과 우리꿀 사용", "달콤한 약과", "꿀을 넣어 더욱 부드럽고"]
+    },
+    {
+      "id": 1,
+      "img": "",
+      "title": "여 라이트 다운필 베스트",
+      "price": 49900,
+      "star": 5,
+      "review": 12,
+      "des": ["탁월한 보온성", "가벼운 무게감", "부드러운 촉감"]
+    },
+    {
+      "id": 3,
+      "img": "",
+      "title": "산타와친구들 LED 패브릭 포스터",
+      "price": 15900,
+      "star": 5,
+      "review": 16,
+      "des": [
+        "크리스마스 분위기 연출에 탁월",
+        "홈파티 선물추천",
+        "연말분위기 업"
+      ]
+    }
+  ],
+  "baseOnReview": [
+    {
+      "id": 0,
+      "title": "자석 부착형 택배용 세라믹 안전 커터칼",
+      "price": 6900,
+      "star": 4.9,
+      "review": 759
+    },
+    {
+      "id": 1,
+      "title": "사각눈날림 조명 워터볼",
+      "price": 29900,
+      "star": 4.9,
+      "review": 61
+    },
+    {
+      "id": 2,
+      "title": "다크초코볼 아몬드",
+      "price": 1000,
+      "star": 4.9,
+      "review": 759
+    },
+    {
+      "id": 4,
+      "title": "물때가 안끼는 샤워호스_1.7M",
+      "price": 11900,
+      "star": 4.8,
+      "review": 193
+    },
+    {
+      "id": 5,
+      "title": "명인이 만든 연근부각",
+      "price": 3500,
+      "star": 4.9,
+      "review": 93
+    },
+    {
+      "id": 6,
+      "title": "360도 회전 트레이 _25x7cm",
+      "price": 7900,
+      "star": 4.9,
+      "review": 386
+    },
+    {
+      "id": 7,
+      "title": "구름 위 깊은 잠 푹신한 말랑 토퍼 _Q",
+      "price": 49900,
+      "star": 5,
+      "review": 49
+    },
+    {
+      "id": 8,
+      "title": "노바 EVA 욕실화 2P",
+      "price": 9900,
+      "star": 4.8,
+      "review": 584
+    },
+    {
+      "id": 9,
+      "title": "세제가 필요없는 일회용 철솜 수세미_30입",
+      "price": 9900,
+      "star": 4.9,
+      "review": 103
+    },
+    {
+      "id": 10,
+      "title": "간편하게 사용하는 실리콘 미니 스퀴지",
+      "price": 9900,
+      "star": 4.9,
+      "review": 641
+    }
+  ]
+}
