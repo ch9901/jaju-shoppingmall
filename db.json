@@ -71,69 +71,6 @@
       "reviews": 68,
       "popularity": false,
       "img": "https://image.sivillage.com/upload/C00001/goods/org/359/221006003264359.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 8,
-      "name": "바로렌지 내열유리 햇밥용기_350ml_2개입",
-      "price": 12900,
-      "rating": 4.9,
-      "reviews": 18,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/519/230807005920519.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 9,
-      "name": "스텐 와이어 접시 정리대 2개",
-      "price": 29900,
-      "rating": 4.9,
-      "reviews": 57,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/461/221118003521461.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 10,
-      "name": "스텐 싱크거름망14CM_회전식 탈수 배수구 전용",
-      "price": 13900,
-      "rating": 4.9,
-      "reviews": 125,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/888/221004003244888.png?RS=300&SP=1"
-    },
-    {
-      "id": 11,
-      "name": "수저건조까지가능한실리콘싱크롤매트_52X32.5CM",
-      "price": 33900,
-      "rating": 4.9,
-      "reviews": 60,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/990/220629002714990.png?RS=300&SP=1"
-    },
-    {
-      "id": 12,
-      "name": "올스테인리스 식기건조대_37x27cm",
-      "price": 99900,
-      "rating": 4.9,
-      "reviews": 62,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/459/221004003245459.png?RS=300&SP=1"
-    },
-    {
-      "id": 13,
-      "name": "바로렌지 내열유리 국용기_500ml_2개입",
-      "price": 14900,
-      "rating": 4.9,
-      "reviews": 22,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/560/230807005920560.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 14,
-      "name": "사용하기 편리하게 내려오는 계란 보관용기",
-      "price": 7900,
-      "rating": 4.9,
-      "reviews": 50,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/626/230920006433626.jpg?RS=300&SP=1"
     }
   ],
   "snack": [
@@ -253,33 +190,6 @@
       "reviews": 13,
       "isNew": true,
       "img": "https://image.sivillage.com/upload/C00001/goods/org/339/230930006496339.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 13,
-      "name": "제주그대로 100% 보석귤칩",
-      "price": 2900,
-      "rating": 5,
-      "reviews": 32,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/644/231128007223644.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 14,
-      "name": "제주 그대로 우리 밀 감귤과즐",
-      "price": 4500,
-      "rating": 4.7,
-      "reviews": 9,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/580/231128007223580.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 15,
-      "name": "자색고구마 맛 미니 뻥튀기",
-      "price": 1900,
-      "rating": 4.9,
-      "reviews": 108,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/541/231128007223541.jpg?RS=300&SP=1"
     }
   ],
   "fashion": [
