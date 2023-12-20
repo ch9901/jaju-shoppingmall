@@ -1,13 +1,11 @@
 import React from "react";
 import { Desc } from "./Navigation";
 import styled from "styled-components";
-import { Inner } from "../App";
-import Productcard from "./ProductcardWrap";
 
-// const Inner = styled.div`
-//   padding: 20px 100px;
-//   margin-top: 30px;
-// `;
+const PartTitleInner = styled.div`
+  padding: 30px 0;
+`;
+
 const ProductCategory = styled.div``;
 const Title = styled(Desc)`
   font-size: 25px;
@@ -17,12 +15,12 @@ const Title = styled(Desc)`
 
 const PartTitle = ({ title, desc }) => {
   return (
-    <Inner>
+    <PartTitleInner>
       <ProductCategory>
         <Title>{title}</Title>
         <Desc color="#555">{desc}</Desc>
       </ProductCategory>
-    </Inner>
+    </PartTitleInner>
   );
 };
 

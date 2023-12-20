@@ -246,6 +246,8 @@
         "id": 6,
         "name": "여 니트 장갑",
         "price": 19900,
+        "rating": 2,
+        "reviews": 1,
         "img": "https://image.sivillage.com/upload/C00001/goods/org/553/231018006624553.jpg?RS=300&SP=1"
       },
       {
@@ -266,14 +268,6 @@
       },
       {
         "id": 9,
-        "name": "니트 핸드 워머",
-        "price": 19900,
-        "rating": 2,
-        "reviews": 1,
-        "img": ""
-      },
-      {
-        "id": 10,
         "name": "여 니트 장갑",
         "price": 19900,
         "rating": 5,
@@ -281,7 +275,7 @@
         "img": "https://image.sivillage.com/upload/C00001/goods/org/562/231018006624562.jpg?RS=300&SP=1"
       },
       {
-        "id": 11,
+        "id": 10,
         "name": "여 소프트 핸드 워머",
         "price": 6900,
         "rating": 5,

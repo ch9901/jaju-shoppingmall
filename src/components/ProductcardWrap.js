@@ -1,7 +1,7 @@
 import React from "react";
-import { Inner } from "../App";
 import styled from "styled-components";
 import ProductCard from "./ProductCard";
+import { useSelector } from "react-redux";
 const All = styled.span`
   display: inline-block;
   font-size: 18px;
@@ -12,15 +12,20 @@ const All = styled.span`
     color: #d99c63;
   }
 `;
+const ProductcardWrapInner = styled.div``;
 
-const ProductcardWrap = () => {
+const ProductcardWrap = (props) => {
+
+  const itemsArr = props?.itemList;
+  const itemListLength = itemsArr?.length;
+
   return (
-    <Inner>
+    <ProductcardWrapInner>
       <All>
-        전체상품 <b>509</b>
+        전체상품 <b>{itemListLength}</b>
       </All>
-      <ProductCard />
-    </Inner>
+      <ProductCard itemList={itemsArr} />
+    </ProductcardWrapInner>
   );
 };
 

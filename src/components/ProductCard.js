@@ -4,6 +4,10 @@ import styled from "styled-components";
 import { Desc } from "./Navigation";
 
 const Card = styled.div`
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 50px;
   img.productimg {
     width: 264px;
     height: 396px;
@@ -17,8 +21,10 @@ const ProductInfo = styled.div`
 `;
 
 const InfoDesc = styled(Desc)`
-display: block,
-marginTop: 10px,
+  display: block;,
+  marginTop: 10px;
+  width:250px;
+  height:38px;
 `;
 
 const InfoDescMore = styled.div`
@@ -40,28 +46,36 @@ const Popular = styled.div`
   font-weight: 800;
   color: #d99c63;
 `;
-const ProductCard = () => {
+
+const CardWrap = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+`;
+const ProductCard = (itemList) => {
+  const lists = itemList?.itemList;
   return (
-    <Card>
-      <img
-        className="productimg"
-        src="https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1"
-        alt=""
-      />
-      <ProductInfo>
-        <InfoDesc as="div">description</InfoDesc>
-        <InfoDesc>19000</InfoDesc>
-        <InfoDescMore>
-          <img
-            src="https://cdn-fo.sivillage.com/mo/assets/comm/image/ico_star_black.svg"
-            alt=""
-          />
-          <span>4.3</span>
-          <b>reviews</b>
-        </InfoDescMore>
-        <Popular>인기</Popular>
-      </ProductInfo>
-    </Card>
+    <CardWrap>
+      {lists?.map((item) => (
+        <Card>
+          <img className="productimg" src={item.img} alt="" />
+          <ProductInfo>
+            <InfoDesc as="div">{item.name}</InfoDesc>
+            <InfoDesc>{item.price}</InfoDesc>
+            <InfoDescMore>
+              <img
+                src="https://cdn-fo.sivillage.com/mo/assets/comm/image/ico_star_black.svg"
+                alt=""
+              />
+              <span>{item.rating}</span>
+              <b>({item.reviews})</b>
+            </InfoDescMore>
+            {item.popularity ? <Popular>인기</Popular> : <Popular />}
+            {item.isNew ? <Popular>신규</Popular> : <Popular />}
+          </ProductInfo>
+        </Card>
+      ))}
+    </CardWrap>
   );
 };
 

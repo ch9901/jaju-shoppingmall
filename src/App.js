@@ -5,19 +5,22 @@ import Login from "./pages/Login";
 import ProductAll from "./pages/ProductAll";
 import styled from "styled-components";
 
-export const Inner = styled.div`
+const Inner = styled.div`
   padding: 20px 100px;
   margin-top: 30px;
 `;
+
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login />} />
-        {/* <Route path="" /> */}
-      </Routes>
+      <Inner>
+        <Routes>
+          <Route path="/" element={<ProductAll />} />
+          <Route path="/login" element={<Login />} />
+          {/* <Route path="" /> */}
+        </Routes>
+      </Inner>
     </div>
   );
 }

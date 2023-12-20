@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { faBars, faUser, faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router";
 import styled from "styled-components";
+import NavigationMenu from "./NavigationMenu";
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -36,6 +36,7 @@ const InputWrap = styled(FlexJcbAic)`
   }
 `;
 const Input = styled.input`
+margin-left:50px;
   width: 500px;
   height: 45px;
   border: 1px solid #e1e1e1;
@@ -59,7 +60,6 @@ const Icon = styled(FlexJcbAic)`
   ${Desc} {
     font-size: 18px;
     font-weight: 600;
-
   }
 `;
 
@@ -98,6 +98,7 @@ const Navigation = () => {
           </Icon>
         </HeaderInner>
       </Header>
+      <NavigationMenu />
     </Container>
   );
 };
