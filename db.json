@@ -1,291 +1,293 @@
 {
-  "kitchenware": [
-    {
-      "id": 0,
-      "name": "흡착력 좋은 실리콘 싱크 물막이_75CM",
-      "price": 19900,
-      "rating": 4.9,
-      "reviews": 296,
-      "popularity": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1"
-    },
-    {
-      "id": 1,
-      "name": "올스테인리스 식기건조대 2단_51x35x37cm",
-      "price": 199000,
-      "rating": 4.8,
-      "reviews": 68,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/443/221004003245443.png?RS=300&SP=1"
-    },
-    {
-      "id": 2,
-      "name": "세제가 필요없는 일회용 철솜 수세미_30입",
-      "price": 9900,
-      "rating": 4.9,
-      "reviews": 103,
-      "popularity": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/699/231129007232699.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 3,
-      "name": "흡착력 좋은 실리콘 싱크물막이_52X4.5X7.5CM",
-      "price": 11900,
-      "rating": 4.9,
-      "reviews": 1004,
-      "popularity": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/979/220629002714979.png?RS=300&SP=1"
-    },
-    {
-      "id": 4,
-      "name": "인덕션 보호 매트 원형_22CM",
-      "price": 7900,
-      "rating": 4.9,
-      "reviews": 247,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/819/220816002962819.png?RS=300&SP=1"
-    },
-    {
-      "id": 5,
-      "name": "한식 수저 세트 4P",
-      "price": 15900,
-      "rating": 4.8,
-      "reviews": 181,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/705/220623002688705.png?RS=300&SP=1"
-    },
-    {
-      "id": 6,
-      "name": "옻칠 수저 세트 4P",
-      "price": 23900,
-      "rating": 4.9,
-      "reviews": 154,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/964/230414004713964.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 7,
-      "name": "컬러 배색 핸들 수저 세트_아이보리",
-      "price": 9900,
-      "rating": 4.9,
-      "reviews": 68,
-      "popularity": false,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/359/221006003264359.jpg?RS=300&SP=1"
-    }
-  ],
-  "snack": [
-    {
-      "id": 0,
-      "name": "다크초코볼 아몬드",
-      "price": 1000,
-      "rating": 5,
-      "reviews": 21,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/813/231201007256813.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 1,
-      "name": "다크초코볼 크리스피",
-      "price": 1000,
-      "rating": 4.8,
-      "reviews": 14,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/809/231201007256809.jpg?RS=300&SP=1  "
-    },
-    {
-      "id": 2,
-      "name": "제주감귤 그대로 다크초콜릿",
-      "price": 3900,
-      "rating": 5,
-      "reviews": 2,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/729/231128007222729.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 3,
-      "name": "구운 양파 맛 미니 뻥튀기",
-      "price": 1900,
-      "rating": 5,
-      "reviews": 5,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/856/231128007221856.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 4,
-      "name": "우리 콩 우리 밀 두부스낵",
-      "price": 1900,
-      "rating": 5,
-      "reviews": 7,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/667/231128007223667.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 5,
-      "name": "병아리 콩과 쌀로 만든 한 입 크기 뻥튀기",
-      "price": 1900,
-      "rating": 5,
-      "reviews": 5,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/675/231128007223675.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 6,
-      "name": "자주 생각나는 고소한 김맛나",
-      "price": 2500,
-      "rating": 5,
-      "reviews": 9,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/659/231128007223659.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 7,
-      "name": "제주감귤 그대로 화이트초콜릿",
-      "price": 3900,
-      "rating": 4.6,
-      "reviews": 3,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/796/231128007221796.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 8,
-      "name": "자연의 맛 그대로 달콤 바삭 대추칩",
-      "price": 3500,
-      "rating": 5,
-      "reviews": 2,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/684/220721002834684.JPG?RS=300&SP=1"
-    },
-    {
-      "id": 9,
-      "name": "촉촉 고구마 말랭이",
-      "price": 2900,
-      "rating": 5,
-      "reviews": 2,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/410/230224004286410.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 10,
-      "name": "생과일 그대로 100% 믹스칩_사과&배",
-      "price": 3500,
-      "rating": 5,
-      "reviews": 3,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/745/231023006649745.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 11,
-      "name": "생과일 그대로 100% 믹스칩_파인&망고",
-      "price": 3500,
-      "rating": 5,
-      "reviews": 8,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/901/231109006988901.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 12,
-      "name": "우리꿀 우리찹쌀약과",
-      "price": 3500,
-      "rating": 5,
-      "reviews": 13,
-      "isNew": true,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/339/230930006496339.jpg?RS=300&SP=1"
-    }
-  ],
-  "fashion": [
-    {
-      "id": 0,
-      "name": "여 경량 패딩 핸드워머",
-      "price": 35900,
-      "rating": 5,
-      "reviews": 1,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/717/231106006940717.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 1,
-      "name": "여 경량 패딩 장갑",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 1,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/703/231106006940703.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 2,
-      "name": "남 경량 패딩 장갑",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 3,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/228/231106006940228.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 3,
-      "name": "남 소프트 스트레치 장갑",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 2,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/220/231106006940220.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 4,
-      "name": "여 소프트 장갑",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 5,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/674/231106006940674.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 5,
-      "name": "여 니트 배색 장갑",
-      "price": 25900,
-      "rating": 5,
-      "reviews": 4,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/660/231106006940660.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 6,
-      "name": "여 니트 장갑",
-      "price": 19900,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/553/231018006624553.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 7,
-      "name": "리브드 니트 넥 워머",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 2,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/446/231013006593446.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 8,
-      "name": "베이직 심플 보닛",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 10,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/136/231012006581136.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 9,
-      "name": "니트 핸드 워머",
-      "price": 19900,
-      "rating": 2,
-      "reviews": 1,
-      "img": ""
-    },
-    {
-      "id": 10,
-      "name": "여 니트 장갑",
-      "price": 19900,
-      "rating": 5,
-      "reviews": 4,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/562/231018006624562.jpg?RS=300&SP=1"
-    },
-    {
-      "id": 11,
-      "name": "여 소프트 핸드 워머",
-      "price": 6900,
-      "rating": 5,
-      "reviews": 2,
-      "img": "https://image.sivillage.com/upload/C00001/goods/org/109/231027006683109.jpg?RS=300&SP=1"
-    }
-  ]
+  "products": {
+    "kitchenware": [
+      {
+        "id": 0,
+        "name": "흡착력 좋은 실리콘 싱크 물막이_75CM",
+        "price": 19900,
+        "rating": 4.9,
+        "reviews": 296,
+        "popularity": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1"
+      },
+      {
+        "id": 1,
+        "name": "올스테인리스 식기건조대 2단_51x35x37cm",
+        "price": 199000,
+        "rating": 4.8,
+        "reviews": 68,
+        "popularity": false,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/443/221004003245443.png?RS=300&SP=1"
+      },
+      {
+        "id": 2,
+        "name": "세제가 필요없는 일회용 철솜 수세미_30입",
+        "price": 9900,
+        "rating": 4.9,
+        "reviews": 103,
+        "popularity": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/699/231129007232699.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 3,
+        "name": "흡착력 좋은 실리콘 싱크물막이_52X4.5X7.5CM",
+        "price": 11900,
+        "rating": 4.9,
+        "reviews": 1004,
+        "popularity": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/979/220629002714979.png?RS=300&SP=1"
+      },
+      {
+        "id": 4,
+        "name": "인덕션 보호 매트 원형_22CM",
+        "price": 7900,
+        "rating": 4.9,
+        "reviews": 247,
+        "popularity": false,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/819/220816002962819.png?RS=300&SP=1"
+      },
+      {
+        "id": 5,
+        "name": "한식 수저 세트 4P",
+        "price": 15900,
+        "rating": 4.8,
+        "reviews": 181,
+        "popularity": false,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/705/220623002688705.png?RS=300&SP=1"
+      },
+      {
+        "id": 6,
+        "name": "옻칠 수저 세트 4P",
+        "price": 23900,
+        "rating": 4.9,
+        "reviews": 154,
+        "popularity": false,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/964/230414004713964.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 7,
+        "name": "컬러 배색 핸들 수저 세트_아이보리",
+        "price": 9900,
+        "rating": 4.9,
+        "reviews": 68,
+        "popularity": false,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/359/221006003264359.jpg?RS=300&SP=1"
+      }
+    ],
+    "snack": [
+      {
+        "id": 0,
+        "name": "다크초코볼 아몬드",
+        "price": 1000,
+        "rating": 5,
+        "reviews": 21,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/813/231201007256813.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 1,
+        "name": "다크초코볼 크리스피",
+        "price": 1000,
+        "rating": 4.8,
+        "reviews": 14,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/809/231201007256809.jpg?RS=300&SP=1  "
+      },
+      {
+        "id": 2,
+        "name": "제주감귤 그대로 다크초콜릿",
+        "price": 3900,
+        "rating": 5,
+        "reviews": 2,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/729/231128007222729.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 3,
+        "name": "구운 양파 맛 미니 뻥튀기",
+        "price": 1900,
+        "rating": 5,
+        "reviews": 5,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/856/231128007221856.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 4,
+        "name": "우리 콩 우리 밀 두부스낵",
+        "price": 1900,
+        "rating": 5,
+        "reviews": 7,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/667/231128007223667.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 5,
+        "name": "병아리 콩과 쌀로 만든 한 입 크기 뻥튀기",
+        "price": 1900,
+        "rating": 5,
+        "reviews": 5,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/675/231128007223675.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 6,
+        "name": "자주 생각나는 고소한 김맛나",
+        "price": 2500,
+        "rating": 5,
+        "reviews": 9,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/659/231128007223659.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 7,
+        "name": "제주감귤 그대로 화이트초콜릿",
+        "price": 3900,
+        "rating": 4.6,
+        "reviews": 3,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/796/231128007221796.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 8,
+        "name": "자연의 맛 그대로 달콤 바삭 대추칩",
+        "price": 3500,
+        "rating": 5,
+        "reviews": 2,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/684/220721002834684.JPG?RS=300&SP=1"
+      },
+      {
+        "id": 9,
+        "name": "촉촉 고구마 말랭이",
+        "price": 2900,
+        "rating": 5,
+        "reviews": 2,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/410/230224004286410.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 10,
+        "name": "생과일 그대로 100% 믹스칩_사과&배",
+        "price": 3500,
+        "rating": 5,
+        "reviews": 3,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/745/231023006649745.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 11,
+        "name": "생과일 그대로 100% 믹스칩_파인&망고",
+        "price": 3500,
+        "rating": 5,
+        "reviews": 8,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/901/231109006988901.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 12,
+        "name": "우리꿀 우리찹쌀약과",
+        "price": 3500,
+        "rating": 5,
+        "reviews": 13,
+        "isNew": true,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/339/230930006496339.jpg?RS=300&SP=1"
+      }
+    ],
+    "fashion": [
+      {
+        "id": 0,
+        "name": "여 경량 패딩 핸드워머",
+        "price": 35900,
+        "rating": 5,
+        "reviews": 1,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/717/231106006940717.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 1,
+        "name": "여 경량 패딩 장갑",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 1,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/703/231106006940703.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 2,
+        "name": "남 경량 패딩 장갑",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 3,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/228/231106006940228.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 3,
+        "name": "남 소프트 스트레치 장갑",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 2,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/220/231106006940220.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 4,
+        "name": "여 소프트 장갑",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 5,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/674/231106006940674.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 5,
+        "name": "여 니트 배색 장갑",
+        "price": 25900,
+        "rating": 5,
+        "reviews": 4,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/660/231106006940660.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 6,
+        "name": "여 니트 장갑",
+        "price": 19900,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/553/231018006624553.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 7,
+        "name": "리브드 니트 넥 워머",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 2,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/446/231013006593446.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 8,
+        "name": "베이직 심플 보닛",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 10,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/136/231012006581136.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 9,
+        "name": "니트 핸드 워머",
+        "price": 19900,
+        "rating": 2,
+        "reviews": 1,
+        "img": ""
+      },
+      {
+        "id": 10,
+        "name": "여 니트 장갑",
+        "price": 19900,
+        "rating": 5,
+        "reviews": 4,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/562/231018006624562.jpg?RS=300&SP=1"
+      },
+      {
+        "id": 11,
+        "name": "여 소프트 핸드 워머",
+        "price": 6900,
+        "rating": 5,
+        "reviews": 2,
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/109/231027006683109.jpg?RS=300&SP=1"
+      }
+    ]
+  }
 }
