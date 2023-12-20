@@ -1,8 +1,10 @@
 import React from "react";
-import PartTitle from "./PartTitle";
-import ProductcardWrap from "./ProductcardWrap";
+import { useDispatch, useSelector } from "react-redux";
+import PartTitle from "../components/PartTitle";
+import ProductcardWrap from "../components/ProductcardWrap";
 
 const ProductAll = () => {
+  const dispatch = useDispatch();
   return (
     <div>
       <PartTitle

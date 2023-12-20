@@ -2,7 +2,7 @@ import "./App.css";
 import { Router, Routes, Route } from "react-router";
 import Navbar from "./components/Navigation";
 import Login from "./pages/Login";
-import ProductAll from "./components/ProductAll";
+import ProductAll from "./pages/ProductAll";
 import styled from "styled-components";
 
 export const Inner = styled.div`

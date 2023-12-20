@@ -40,7 +40,7 @@ const Popular = styled.div`
   font-weight: 800;
   color: #d99c63;
 `;
-const Productcard = () => {
+const ProductCard = () => {
   return (
     <Card>
       <img
@@ -65,4 +65,4 @@ const Productcard = () => {
   );
 };
 
-export default Productcard;
+export default ProductCard;
