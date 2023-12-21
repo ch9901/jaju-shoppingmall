@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import ProductAll from "../pages/ProductAll";
+import ProductDetail from "../pages/ProductDetail";
+import Login from "../pages/Login";
 
-const PrivateRoute = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const PrivateRoute = ({ authenticate }) => {
+  return authenticate ? <ProductDetail /> : <Login />;
+};
 
-export default PrivateRoute
+export default PrivateRoute;

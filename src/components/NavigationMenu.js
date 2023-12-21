@@ -45,8 +45,8 @@ const NavigationMenu = () => {
       <MenuActive onClick={goToHome}>패션잡화*</MenuActive>
       <MenuActive onClick={goToHome}>스낵*</MenuActive>
 
-      {navMenu.map((menu) => (
-        <Menu>{menu}</Menu>
+      {navMenu.map((menu, index) => (
+        <Menu key={index}>{menu}</Menu>
       ))}
     </Menubar>
   );

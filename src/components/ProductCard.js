@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Desc } from "./Navigation";
 
 const Card = styled.div`
   display: inline-block;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 50px;
+  cursor: pointer;
   img.productimg {
     width: 264px;
     height: 396px;
@@ -51,13 +52,20 @@ const CardWrap = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  justify-content: center;
 `;
 const ProductCard = (itemList) => {
   const lists = itemList?.itemList;
+  const navigate = useNavigate();
+  const showDetail = () => {
+    navigate(`/product`);
+  };
+  console.log(itemList);
+
   return (
     <CardWrap>
-      {lists?.map((item) => (
-        <Card>
+      {lists?.map((item, index) => (
+        <Card key={index} onClick={showDetail}>
           <img className="productimg" src={item.img} alt="" />
           <ProductInfo>
             <InfoDesc as="div">{item.name}</InfoDesc>
@@ -70,8 +78,8 @@ const ProductCard = (itemList) => {
               <span>{item.rating}</span>
               <b>({item.reviews})</b>
             </InfoDescMore>
-            {item.popularity ? <Popular>인기</Popular> : <Popular />}
-            {item.isNew ? <Popular>신규</Popular> : <Popular />}
+            {item.popularity && <Popular>인기</Popular>}
+            {item.isNew && <Popular>신규</Popular>}
           </ProductInfo>
         </Card>
       ))}

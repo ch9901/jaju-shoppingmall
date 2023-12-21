@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router";
 import styled from "styled-components";
 import NavigationMenu from "./NavigationMenu";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -27,6 +28,9 @@ const Header = styled(FlexJcbAic)`
 
 const HeaderInner = styled(FlexJcbAic)`
   width: ${(props) => props.width};
+  img {
+    cursor: pointer;
+  }
 `;
 const InputWrap = styled(FlexJcbAic)`
   position: relative;
@@ -36,7 +40,7 @@ const InputWrap = styled(FlexJcbAic)`
   }
 `;
 const Input = styled.input`
-margin-left:50px;
+  margin-left: 50px;
   width: 500px;
   height: 45px;
   border: 1px solid #e1e1e1;
@@ -54,6 +58,7 @@ export const Desc = styled.span`
 `;
 const Icon = styled(FlexJcbAic)`
   flex-direction: column;
+  cursor: pointer;
   img {
     width: 40px;
   }
@@ -63,7 +68,11 @@ const Icon = styled(FlexJcbAic)`
   }
 `;
 
-const Navigation = () => {
+const Navigation = ({ authenticate, setAuthenticate }) => {
+  const navigate = useNavigate();
+  const goToHome = () => {
+    navigate("/");
+  };
   return (
     <Container>
       <Header as="div">
@@ -72,6 +81,7 @@ const Navigation = () => {
             src="https://cdn-fo.sivillage.com/fo/assets/common/image/icons/etc/ico-common-logo-jaju.svg"
             alt=""
             width={150}
+            onClick={goToHome}
           />
           <InputWrap as="div">
             <Input type="text" placeholder="검색어를 입력하세요" />
@@ -81,14 +91,27 @@ const Navigation = () => {
             />
           </InputWrap>
         </HeaderInner>
-        <HeaderInner width={"9%"}>
-          <Icon>
-            <img
-              src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
-              alt=""
-            />
-            <Desc color="#555">로그인</Desc>
-          </Icon>
+        <HeaderInner width={"10%"}>
+          {authenticate ? (
+            <Link style={{textDecoration: 'none'}} to="/login">
+              <Icon>
+                <img
+                  src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
+                  alt=""
+                />
+                <Desc color="#555">로그인</Desc>
+              </Icon>
+            </Link>
+          ) : (
+            <Icon onClick={() => setAuthenticate(true)}>
+              <img
+                src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
+                alt=""
+              />
+              <Desc color="#555">로그아웃</Desc>
+            </Icon>
+          )}
+
           <Icon>
             <img
               src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-shoppingbag.svg"

@@ -8,7 +8,8 @@
         "rating": 4.9,
         "reviews": 296,
         "popularity": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 1,
@@ -17,7 +18,8 @@
         "rating": 4.8,
         "reviews": 68,
         "popularity": false,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/443/221004003245443.png?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/443/221004003245443.png?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 2,
@@ -26,7 +28,8 @@
         "rating": 4.9,
         "reviews": 103,
         "popularity": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/699/231129007232699.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/699/231129007232699.jpg?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 3,
@@ -35,7 +38,8 @@
         "rating": 4.9,
         "reviews": 1004,
         "popularity": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/979/220629002714979.png?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/979/220629002714979.png?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 4,
@@ -44,7 +48,8 @@
         "rating": 4.9,
         "reviews": 247,
         "popularity": false,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/819/220816002962819.png?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/819/220816002962819.png?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 5,
@@ -53,7 +58,8 @@
         "rating": 4.8,
         "reviews": 181,
         "popularity": false,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/705/220623002688705.png?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/705/220623002688705.png?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 6,
@@ -62,7 +68,8 @@
         "rating": 4.9,
         "reviews": 154,
         "popularity": false,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/964/230414004713964.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/964/230414004713964.jpg?RS=300&SP=1",
+        "category": "kitchenware"
       },
       {
         "id": 7,
@@ -71,7 +78,8 @@
         "rating": 4.9,
         "reviews": 68,
         "popularity": false,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/359/221006003264359.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/359/221006003264359.jpg?RS=300&SP=1",
+        "category": "kitchenware"
       }
     ],
     "snack": [
@@ -82,7 +90,8 @@
         "rating": 5,
         "reviews": 21,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/813/231201007256813.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/813/231201007256813.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 1,
@@ -91,7 +100,8 @@
         "rating": 4.8,
         "reviews": 14,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/809/231201007256809.jpg?RS=300&SP=1  "
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/809/231201007256809.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 2,
@@ -100,7 +110,8 @@
         "rating": 5,
         "reviews": 2,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/729/231128007222729.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/729/231128007222729.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 3,
@@ -109,7 +120,8 @@
         "rating": 5,
         "reviews": 5,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/856/231128007221856.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/856/231128007221856.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 4,
@@ -118,7 +130,8 @@
         "rating": 5,
         "reviews": 7,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/667/231128007223667.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/667/231128007223667.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 5,
@@ -127,7 +140,8 @@
         "rating": 5,
         "reviews": 5,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/675/231128007223675.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/675/231128007223675.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 6,
@@ -136,7 +150,8 @@
         "rating": 5,
         "reviews": 9,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/659/231128007223659.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/659/231128007223659.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 7,
@@ -145,7 +160,8 @@
         "rating": 4.6,
         "reviews": 3,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/796/231128007221796.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/s3/goods/org/796/231128007221796.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 8,
@@ -154,7 +170,8 @@
         "rating": 5,
         "reviews": 2,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/684/220721002834684.JPG?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/684/220721002834684.JPG?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 9,
@@ -163,7 +180,8 @@
         "rating": 5,
         "reviews": 2,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/410/230224004286410.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/410/230224004286410.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 10,
@@ -172,7 +190,8 @@
         "rating": 5,
         "reviews": 3,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/745/231023006649745.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/745/231023006649745.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 11,
@@ -181,7 +200,8 @@
         "rating": 5,
         "reviews": 8,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/901/231109006988901.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/901/231109006988901.jpg?RS=300&SP=1",
+        "category": "snack"
       },
       {
         "id": 12,
@@ -190,7 +210,8 @@
         "rating": 5,
         "reviews": 13,
         "isNew": true,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/339/230930006496339.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/339/230930006496339.jpg?RS=300&SP=1",
+        "category": "snack"
       }
     ],
     "fashion": [
@@ -200,7 +221,8 @@
         "price": 35900,
         "rating": 5,
         "reviews": 1,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/717/231106006940717.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/717/231106006940717.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 1,
@@ -208,7 +230,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 1,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/703/231106006940703.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/703/231106006940703.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 2,
@@ -216,7 +239,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 3,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/228/231106006940228.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/228/231106006940228.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 3,
@@ -224,7 +248,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 2,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/220/231106006940220.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/220/231106006940220.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 4,
@@ -232,7 +257,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 5,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/674/231106006940674.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/674/231106006940674.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 5,
@@ -240,7 +266,8 @@
         "price": 25900,
         "rating": 5,
         "reviews": 4,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/660/231106006940660.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/660/231106006940660.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 6,
@@ -248,7 +275,8 @@
         "price": 19900,
         "rating": 2,
         "reviews": 1,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/553/231018006624553.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/553/231018006624553.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 7,
@@ -256,7 +284,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 2,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/446/231013006593446.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/446/231013006593446.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 8,
@@ -264,7 +293,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 10,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/136/231012006581136.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/136/231012006581136.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 9,
@@ -272,7 +302,8 @@
         "price": 19900,
         "rating": 5,
         "reviews": 4,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/562/231018006624562.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/562/231018006624562.jpg?RS=300&SP=1",
+        "category": "fashion"
       },
       {
         "id": 10,
@@ -280,7 +311,8 @@
         "price": 6900,
         "rating": 5,
         "reviews": 2,
-        "img": "https://image.sivillage.com/upload/C00001/goods/org/109/231027006683109.jpg?RS=300&SP=1"
+        "img": "https://image.sivillage.com/upload/C00001/goods/org/109/231027006683109.jpg?RS=300&SP=1",
+        "category": "fashion"
       }
     ]
   }
