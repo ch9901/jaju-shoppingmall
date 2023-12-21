@@ -9,7 +9,6 @@ import Kitchenware from "./Kitchenware";
 import Snack from "./Snack";
 import Fashion from "./Fashion";
 
-
 const ProductAllTit = styled.div`
   display: flex;
   justify-content: center;
@@ -29,10 +28,6 @@ const LoadingNetYet = styled.div`
   height: 100vh;
 `;
 
-const ProductCategory = styled.div`
-  margin-bottom: 150px;
-`;
-
 const ProductAll = () => {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
@@ -42,13 +37,13 @@ const ProductAll = () => {
   };
   useEffect(() => {
     getProducts();
+    setLoading(false);
   }, []);
 
-  const productListAll = useSelector((state) => state.products.productList);
-  const kitchenwareList = productListAll.kitchenware;
-  const fashionList = productListAll.fashion;
-  const snackList = productListAll.snack;
-
+  const { productList } = useSelector((state) => state.products);
+  const kitchenwareList = productList?.kitchenware;
+  const fashionList = productList?.fashion;
+  const snackList = productList?.snack;
   return (
     <div>
       {loading ? (
@@ -62,7 +57,7 @@ const ProductAll = () => {
               <Title>전체상품</Title>
             </ProductAllTit>
           </div>
-          <Kitchenware kitchenwareList={kitchenwareList} />
+          <Kitchenware kitchenwareList={kitchenwareList} loading={loading} />
           <Fashion fashionList={fashionList} />
           <Snack snackList={snackList} />
         </div>

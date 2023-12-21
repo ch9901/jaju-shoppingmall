@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
+import { useDispatch, useSelector } from "react-redux";
+import { authenticateAction } from "../redux/actions/authenticateAction";
 
 const FormContainer = styled.div`
   width: 100%;
@@ -9,13 +11,19 @@ const FormContainer = styled.div`
 
 const Login = ({ setAuthenticate }) => {
   const navigate = useNavigate();
-  const [idCheck, setIdCheck] = useState("");
-  const [pwCheck, setPwCheck] = useState("");
-  const ClickToLogin = () => {
-    if (idCheck !== "" && pwCheck !== "") {
-      setAuthenticate(false);
-      navigate("/");
-    }
+  const dispatch = useDispatch();
+  const [id, setIdCheck] = useState("");
+  const [password, setPwCheck] = useState("");
+  const trueOk = useSelector((state) => state.auth.authenticate);
+
+  console.log(setAuthenticate);
+  console.log(trueOk);
+  const ClickToLogin = (e) => {
+    e.preventDefault();
+    dispatch(authenticateAction.login(id, password));
+    setAuthenticate(true);
+    navigate("/");
+    console.log("work");
   };
 
   return (

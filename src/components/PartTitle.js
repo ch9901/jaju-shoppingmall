@@ -1,5 +1,4 @@
 import React from "react";
-import { Desc } from "./Navigation";
 import styled from "styled-components";
 
 const PartTitleInner = styled.div`
@@ -8,9 +7,15 @@ const PartTitleInner = styled.div`
 
 const ProductCategory = styled.div`
   margin-bottom: 40px;
-border-bottom:1px solid #ddd;
-padding-bottom:15px;
-  `;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+`;
+
+const Desc = styled.span`
+  font-size: 15px;
+  color: ${(props) => props.color};
+`;
+
 const Title = styled(Desc)`
   font-size: 25px;
   font-weight: 600;

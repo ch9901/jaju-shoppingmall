@@ -4,8 +4,11 @@ import Navbar from "./components/Navigation";
 import Login from "./pages/Login";
 import ProductAll from "./pages/ProductAll";
 import styled from "styled-components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PrivateRoute from "./routes/PrivateRoute";
+import Kitchenware from "./pages/Kitchenware";
+import Fashion from "./pages/Fashion";
+import Snack from "./pages/Snack";
 
 const Inner = styled.div`
   padding: 20px 100px;
@@ -13,7 +16,9 @@ const Inner = styled.div`
 `;
 
 function App() {
-  const [authenticate, setAuthenticate] = useState(true);
+  const [authenticate, setAuthenticate] = useState(false);
+
+
   return (
     <div>
       <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
@@ -24,16 +29,19 @@ function App() {
             path="/login"
             element={<Login setAuthenticate={setAuthenticate} />}
           />
+          <Route path="/products/kitchenware" element={<Kitchenware />} />
           <Route
-            path="/product/kitchenware/:id"
+            path="/products/kitchenware/:id"
             element={<PrivateRoute authenticate={authenticate} />}
           />
+          <Route path="/products/fashion" element={<Fashion />} />
           <Route
-            path="/product/fashion/:id"
+            path="/products/fashion/:id"
             element={<PrivateRoute authenticate={authenticate} />}
           />
+          <Route path="/products/snack" element={<Snack />} />
           <Route
-            path="/product/snack/:id"
+            path="/products/snack/:id"
             element={<PrivateRoute authenticate={authenticate} />}
           />
         </Routes>

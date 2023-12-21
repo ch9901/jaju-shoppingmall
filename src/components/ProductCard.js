@@ -1,18 +1,22 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import { Desc } from "./Navigation";
 
 const Card = styled.div`
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 50px;
   cursor: pointer;
   img.productimg {
     width: 264px;
     height: 396px;
   }
+`;
+
+const Desc = styled.span`
+  font-size: 15px;
+  color: ${(props) => props.color};
 `;
 const ProductInfo = styled.div`
   margin-top: 20px;
@@ -52,36 +56,33 @@ const CardWrap = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 `;
-const ProductCard = (itemList) => {
-  const lists = itemList?.itemList;
-  const navigate = useNavigate();
-  const showDetail = () => {
-    navigate(`/product`);
-  };
-  console.log(itemList);
+const ProductCard = ({ itemList }) => {
+  const lists = itemList;
 
   return (
     <CardWrap>
       {lists?.map((item, index) => (
-        <Card key={index} onClick={showDetail}>
-          <img className="productimg" src={item.img} alt="" />
-          <ProductInfo>
-            <InfoDesc as="div">{item.name}</InfoDesc>
-            <InfoDesc>{item.price}</InfoDesc>
-            <InfoDescMore>
-              <img
-                src="https://cdn-fo.sivillage.com/mo/assets/comm/image/ico_star_black.svg"
-                alt=""
-              />
-              <span>{item.rating}</span>
-              <b>({item.reviews})</b>
-            </InfoDescMore>
-            {item.popularity && <Popular>인기</Popular>}
-            {item.isNew && <Popular>신규</Popular>}
-          </ProductInfo>
-        </Card>
+        <Link key={index} to={`/products/${item.category}/${item.id}`}>
+          <Card>
+            <img className="productimg" src={item.img} alt="" />
+            <ProductInfo>
+              <InfoDesc as="div">{item.name}</InfoDesc>
+              <InfoDesc>{item.price}</InfoDesc>
+              <InfoDescMore>
+                <img
+                  src="https://cdn-fo.sivillage.com/mo/assets/comm/image/ico_star_black.svg"
+                  alt=""
+                />
+                <span>{item.rating}</span>
+                <b>({item.reviews})</b>
+              </InfoDescMore>
+              {item.popularity && <Popular>인기</Popular>}
+              {item.isNew && <Popular>신규</Popular>}
+            </ProductInfo>
+          </Card>
+        </Link>
       ))}
     </CardWrap>
   );

@@ -51,8 +51,7 @@ const Input = styled.input`
     outline: none;
   }
 `;
-
-export const Desc = styled.span`
+const Desc = styled.span`
   font-size: 15px;
   color: ${(props) => props.color};
 `;
@@ -93,7 +92,15 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
         </HeaderInner>
         <HeaderInner width={"10%"}>
           {authenticate ? (
-            <Link style={{textDecoration: 'none'}} to="/login">
+            <Icon onClick={() => setAuthenticate(false)}>
+              <img
+                src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
+                alt=""
+              />
+              <Desc color="#555">로그아웃</Desc>
+            </Icon>
+          ) : (
+            <Link style={{ textDecoration: "none" }} to="/login">
               <Icon>
                 <img
                   src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
@@ -102,14 +109,6 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
                 <Desc color="#555">로그인</Desc>
               </Icon>
             </Link>
-          ) : (
-            <Icon onClick={() => setAuthenticate(true)}>
-              <img
-                src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-my.svg"
-                alt=""
-              />
-              <Desc color="#555">로그아웃</Desc>
-            </Icon>
           )}
 
           <Icon>

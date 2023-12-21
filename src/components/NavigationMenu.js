@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+import Kitchenware from "../pages/Kitchenware";
 
 const Menu = styled.span`
   font-size: 16px;
@@ -40,10 +42,18 @@ const NavigationMenu = () => {
         alt="btn"
         width={20}
       />
-      <MenuActive onClick={goToHome}>전체카테고리*</MenuActive>
-      <MenuActive onClick={goToHome}>주방용품*</MenuActive>
-      <MenuActive onClick={goToHome}>패션잡화*</MenuActive>
-      <MenuActive onClick={goToHome}>스낵*</MenuActive>
+      <MenuActive>
+        <Link to={"/"}>전체카테고리*</Link>
+      </MenuActive>
+      <MenuActive>
+        <Link to={"/products/kitchenware"}>주방용품*</Link>
+      </MenuActive>
+      <MenuActive>
+        <Link to={"./products/fashion"}>패션잡화*</Link>
+      </MenuActive>
+      <MenuActive>
+        <Link to={"./products/snack"}>스낵*</Link>
+      </MenuActive>
 
       {navMenu.map((menu, index) => (
         <Menu key={index}>{menu}</Menu>

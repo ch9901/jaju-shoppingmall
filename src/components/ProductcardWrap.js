@@ -15,7 +15,6 @@ const All = styled.span`
 const ProductcardWrapInner = styled.div``;
 
 const ProductcardWrap = (props) => {
-
   const itemsArr = props?.itemList;
   const itemListLength = itemsArr?.length;
 
