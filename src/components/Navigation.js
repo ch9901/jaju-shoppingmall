@@ -72,6 +72,12 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
   const goToHome = () => {
     navigate("/");
   };
+  const onCheckEnter = (e) => {
+    console.log(e.target.value);
+    if (e.key === "Enter") {
+      navigate(`?q=${e.target.value}`);
+    }
+  };
   return (
     <Container>
       <Header as="div">
@@ -83,7 +89,11 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
             onClick={goToHome}
           />
           <InputWrap as="div">
-            <Input type="text" placeholder="검색어를 입력하세요" />
+            <Input
+              type="text"
+              placeholder="검색어를 입력하세요"
+              onKeyUp={onCheckEnter}
+            />
             <img
               src="https://cdn-fo.sivillage.com/fo/assets/common/image/icons/20x20/ico-common-24-search-gray.svg"
               alt=""

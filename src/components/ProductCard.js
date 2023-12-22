@@ -8,9 +8,23 @@ const Card = styled.div`
   margin-right: 5px;
   margin-bottom: 50px;
   cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+`;
+
+const ImgWrap = styled.div`
+  width: 264px;
+  height: 396px;
+  overflow: hidden;
   img.productimg {
     width: 264px;
     height: 396px;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -66,7 +80,9 @@ const ProductCard = ({ itemList }) => {
       {lists?.map((item, index) => (
         <Link key={index} to={`/products/${item.category}/${item.id}`}>
           <Card>
-            <img className="productimg" src={item.img} alt="" />
+            <ImgWrap>
+              <img className="productimg" src={item.img} alt="productimg" />
+            </ImgWrap>
             <ProductInfo>
               <InfoDesc as="div">{item.name}</InfoDesc>
               <InfoDesc>{item.price}</InfoDesc>

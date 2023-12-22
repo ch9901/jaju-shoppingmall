@@ -14,6 +14,8 @@ const MenuActive = styled(Menu)`
   font-size: 16px;
   font-weight: 700;
   opacity: 1;
+  text-decoration: none;
+  color: #000;
   &:hover {
     color: #f00;
   }
@@ -28,12 +30,12 @@ const Menubar = styled.div`
   gap: 20px;
   padding: 0 100px;
 `;
-
 const NavigationMenu = () => {
   const navigate = useNavigate();
   const goToHome = () => {
     navigate("/");
   };
+
   const navMenu = ["신상품", "JAJU CLUB", "선물하기"];
   return (
     <Menubar>
@@ -42,17 +44,17 @@ const NavigationMenu = () => {
         alt="btn"
         width={20}
       />
-      <MenuActive>
-        <Link to={"/"}>전체카테고리*</Link>
+      <MenuActive as={"a"} href="/">
+        전체카테고리*
       </MenuActive>
-      <MenuActive>
-        <Link to={"/products/kitchenware"}>주방용품*</Link>
+      <MenuActive as={"a"} href="/products/kitchenware">
+        주방용품*
       </MenuActive>
-      <MenuActive>
-        <Link to={"./products/fashion"}>패션잡화*</Link>
+      <MenuActive as={"a"} href="/products/fashion">
+        패션잡화*
       </MenuActive>
-      <MenuActive>
-        <Link to={"./products/snack"}>스낵*</Link>
+      <MenuActive as={"a"} href="/products/snack">
+        스낵*
       </MenuActive>
 
       {navMenu.map((menu, index) => (

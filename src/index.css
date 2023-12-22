@@ -17,3 +17,6 @@ code {
 * {
   font-family: "nanumsquare";
 }
+a {
+  text-decoration: none;
+}

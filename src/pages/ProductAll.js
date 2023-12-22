@@ -1,8 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import PartTitle from "../components/PartTitle";
-import ProductcardWrap from "../components/ProductcardWrap";
-import { productAction } from "../redux/actions/productAction";
+import React from "react";
 import styled from "styled-components";
 import { ClipLoader } from "react-spinners";
 import Kitchenware from "./Kitchenware";
@@ -28,22 +24,7 @@ const LoadingNetYet = styled.div`
   height: 100vh;
 `;
 
-const ProductAll = () => {
-  const [loading, setLoading] = useState(true);
-  const dispatch = useDispatch();
-  const getProducts = async () => {
-    dispatch(productAction.getProduct());
-    setLoading(false);
-  };
-  useEffect(() => {
-    getProducts();
-    setLoading(false);
-  }, []);
-
-  const { productList } = useSelector((state) => state.products);
-  const kitchenwareList = productList?.kitchenware;
-  const fashionList = productList?.fashion;
-  const snackList = productList?.snack;
+const ProductAll = ({ loading, kitchenwareList, fashionList, snackList }) => {
   return (
     <div>
       {loading ? (

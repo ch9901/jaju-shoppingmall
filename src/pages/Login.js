@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams, useLocation } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { authenticateAction } from "../redux/actions/authenticateAction";
 
@@ -16,14 +16,17 @@ const Login = ({ setAuthenticate }) => {
   const [password, setPwCheck] = useState("");
   const trueOk = useSelector((state) => state.auth.authenticate);
 
-  console.log(setAuthenticate);
-  console.log(trueOk);
+  const { pathname } = useLocation();
   const ClickToLogin = (e) => {
     e.preventDefault();
     dispatch(authenticateAction.login(id, password));
-    setAuthenticate(true);
-    navigate("/");
-    console.log("work");
+    setAuthenticate(trueOk);
+    if (pathname.length <= 6) {
+      navigate("/");
+    } else {
+      console.log("Login : go pathname work");
+      navigate(pathname);
+    }
   };
 
   return (
@@ -65,7 +68,6 @@ const Login = ({ setAuthenticate }) => {
 
         <Button
           variant="dark"
-          type="submit"
           style={{ height: "60px", width: "100%" }}
           onClick={ClickToLogin}
         >
