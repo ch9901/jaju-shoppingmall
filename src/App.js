@@ -20,7 +20,8 @@ const Inner = styled.div`
 
 function App() {
   const [query, setQuery] = useSearchParams();
-  const [authenticate, setAuthenticate] = useState(false);
+  //기본값 false임 다 끝나면 바꿔놓을 것
+  const [authenticate, setAuthenticate] = useState(true);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const getProducts = async () => {
