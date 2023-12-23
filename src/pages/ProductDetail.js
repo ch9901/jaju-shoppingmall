@@ -2,30 +2,40 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductDetailAction } from "../redux/actions/getProductDetailAction";
+import { setPageTitle } from "../util";
 
 const ProductDetail = () => {
   const { pathname } = useLocation();
-  const params = useParams();
-  console.log(params);
-  console.log(pathname);
-
-  const [loading, setLoading] = useState(true);
-  const dispatch = useDispatch();
-  const getProductDetail = async () => {
-    dispatch(getProductDetailAction.getProductDetail(pathname));
-    setLoading(false);
-  };
+  const { id } = useParams();
   useEffect(() => {
-    getProductDetail(pathname);
-    setLoading(false);
+    setPageTitle(`JAJU - ${id} `);
   }, []);
 
-  const data = useSelector((state) => console.log(state));
-  console.log("data:", data);
+  const [loading, setLoading] = useState(true);
+  const [product, setProduct] = useState(undefined);
+  const dispatch = useDispatch();
+  const getProductDetail = async () => {
+    // const url = `
+    // https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products/kitchenware
+    // `;
+    //여기서 url 했는데도 안가져와짐 데이터 ..
+    const url = 'https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products';
+    const response = await fetch(url);
+    console.log("response >>", response);
+    const data = await response.json();
+    setProduct(data);
+    setLoading(false);
+  };
+  console.log("data >> ", product);
+  useEffect(() => {
+    getProductDetail();
+  }, []);
+
+
   return (
     <div>
-      pathname : {pathname} ______ params id :{params.id}
-      <div>불러온 데이터 : {data}</div>
+      pathname : {pathname} ______ params id :{id}
+      <div>불러온 데이터 : </div>
     </div>
   );
 };

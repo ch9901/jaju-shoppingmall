@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { ClipLoader } from "react-spinners";
+import { setPageTitle } from "../util";
 import Kitchenware from "./Kitchenware";
 import Snack from "./Snack";
 import Fashion from "./Fashion";
@@ -25,6 +26,9 @@ const LoadingNetYet = styled.div`
 `;
 
 const ProductAll = ({ loading, kitchenwareList, fashionList, snackList }) => {
+  useEffect(() => {
+    setPageTitle("JAJU - Home");
+  }, []);
   return (
     <div>
       {loading ? (

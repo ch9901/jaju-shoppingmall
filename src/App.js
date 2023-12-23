@@ -20,13 +20,12 @@ const Inner = styled.div`
 
 function App() {
   const [query, setQuery] = useSearchParams();
-  console.log(query);
   const [authenticate, setAuthenticate] = useState(false);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const getProducts = async () => {
     const searchQuery = query.get("q") || "";
-    console.log("searchQuery : ", searchQuery);
+    // console.log("searchQuery : ", searchQuery);
     dispatch(productAction.getProduct(searchQuery));
     setLoading(false);
   };
@@ -35,7 +34,6 @@ function App() {
   }, [query]);
 
   const productList = useSelector((state) => state.products.productList);
-  console.log(productList);
   const kitchenwareList = productList?.kitchenware;
   const fashionList = productList?.fashion;
   const snackList = productList?.snack;

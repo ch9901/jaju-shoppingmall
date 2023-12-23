@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PartTitle from "../components/PartTitle";
 import ProductcardWrap from "../components/ProductcardWrap";
 import styled from "styled-components";
-import { ClipLoader } from "react-spinners";
-import { useSelector } from "react-redux";
+import { setPageTitle } from "../util";
 
 const ProductCategory = styled.div`
   margin-bottom: 150px;
 `;
 
-
 const Kitchenware = ({ kitchenwareList, loading }) => {
+  useEffect(() => {
+    setPageTitle("JAJU - kitchenware🫧");
+  }, []);
   return (
     <ProductCategory>
       <PartTitle

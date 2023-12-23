@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import styled from "styled-components";
-import { useNavigate, useParams, useLocation } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { authenticateAction } from "../redux/actions/authenticateAction";
+import { setPageTitle } from "../util";
 
 const FormContainer = styled.div`
   width: 100%;
 `;
 
 const Login = ({ setAuthenticate }) => {
+  useEffect(() => {
+    setPageTitle("JAJU - Login");
+  }, []);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [id, setIdCheck] = useState("");
@@ -40,7 +44,7 @@ const Login = ({ setAuthenticate }) => {
         height: "500px",
       }}
     >
-      <Form>
+      <Form onSubmit={ClickToLogin}>
         <FormContainer>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>ID</Form.Label>
@@ -69,7 +73,7 @@ const Login = ({ setAuthenticate }) => {
         <Button
           variant="dark"
           style={{ height: "60px", width: "100%" }}
-          onClick={ClickToLogin}
+          type="submit"
         >
           로그인
         </Button>
