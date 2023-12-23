@@ -19,7 +19,8 @@ const ProductDetail = () => {
     // https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products/kitchenware
     // `;
     //여기서 url 했는데도 안가져와짐 데이터 ..
-    const url = 'https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products';
+    const url =
+      "https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/kitchenware";
     const response = await fetch(url);
     console.log("response >>", response);
     const data = await response.json();
@@ -30,7 +31,6 @@ const ProductDetail = () => {
   useEffect(() => {
     getProductDetail();
   }, []);
-
 
   return (
     <div>
