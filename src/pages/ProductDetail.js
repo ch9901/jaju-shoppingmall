@@ -3,6 +3,7 @@ import { useLocation, useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { setPageTitle } from "../util";
 import styled from "styled-components";
+import { ClipLoader } from "react-spinners";
 
 const Divider = styled.div`
   height: 1px;
@@ -47,7 +48,9 @@ const BasicInfo = styled.div`
     color: #888;
   }
   span {
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #555;
     font-weight: 600;
   }
 `;
@@ -107,6 +110,12 @@ const PriceWrap = styled.div`
 const PriceTit = styled(InfoTit)``;
 
 const Price = styled.span``;
+const LoadingNetYet = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+`;
 const ProductDetail = () => {
   const { pathname } = useLocation();
   const { productCategory, id } = useParams();
@@ -124,7 +133,7 @@ const ProductDetail = () => {
     // https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products/kitchenware
     // `;
     //여기서 url 했는데도 안가져와짐 데이터 ..
-    const url = `https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/products/${productCategory}/${id}`;
+    const url = `https://my-json-server.typicode.com/ch9901/jaju-shoppingmall/${productCategory}/${id}`;
     const response = await fetch(url);
     // console.log("response >>", response);
     const data = await response.json();
@@ -133,6 +142,7 @@ const ProductDetail = () => {
     setProduct(data);
     setLoading(false);
   };
+  console.log(product);
   useEffect(() => {
     getProductDetail();
   }, []);
@@ -150,52 +160,52 @@ const ProductDetail = () => {
     }
   };
   return (
-    <div>
-      pathname : {pathname} ______ params id :{id}
-      <div>불러온 데이터 : </div>
-      <hr />
-      <ProductDetailInfo>
-        <ImgWrap>
-          <img
-            src="https://image.sivillage.com/upload/C00001/goods/org/646/220722002845646.png?RS=300&SP=1"
-            alt="productimg"
-          />
-        </ImgWrap>
-        <ProductInfo>
-          <BasicInfo>
-            <h1>흡착력 좋은 실리콘 싱크 물막이_75CM</h1>
-            <p>item des</p>
-            <span>item price</span>
-          </BasicInfo>
-          <Divider />
-          <DeliveryInfo>
-            <InfoTit>배송기간</InfoTit>
-            <DeliveryDeparture>
-              오늘 결제시
-              <b>
-                {month}/{date} 배송출발
-              </b>
-            </DeliveryDeparture>
-          </DeliveryInfo>
-          <Divider />
-          <DeliveryInfo>
-            <NumWrap>
-              <InfoTit>수량</InfoTit>
-              <ButtonWrap>
-                <NumButton onClick={decrease}>-</NumButton>
-                <Num>{num}</Num>
-                <NumButton onClick={increase}>+</NumButton>
-              </ButtonWrap>
-            </NumWrap>
+    <>
+      {loading ? (
+        <LoadingNetYet>
+          <ClipLoader color="#000" size={200} loading={loading} />
+        </LoadingNetYet>
+      ) : (
+        <ProductDetailInfo>
+          <ImgWrap>
+            <img src={product.img} alt="productimg" />
+          </ImgWrap>
+          <ProductInfo>
+            <BasicInfo>
+              <h1>{product.name}</h1>
+              <span>{product.price}원</span>
+            </BasicInfo>
             <Divider />
-            <PriceWrap>
-              <PriceTit>판매가</PriceTit>
-              <Price>{3500 * num}원</Price>
-            </PriceWrap>
-          </DeliveryInfo>
-        </ProductInfo>
-      </ProductDetailInfo>
-    </div>
+            <DeliveryInfo>
+              <InfoTit>배송기간</InfoTit>
+              <DeliveryDeparture>
+                오늘 결제시{" "}
+                <b>
+                  {" "}
+                  - {month}/{date} 배송출발
+                </b>
+              </DeliveryDeparture>
+            </DeliveryInfo>
+            <Divider />
+            <DeliveryInfo>
+              <NumWrap>
+                <InfoTit>수량</InfoTit>
+                <ButtonWrap>
+                  <NumButton onClick={decrease}>-</NumButton>
+                  <Num>{num}</Num>
+                  <NumButton onClick={increase}>+</NumButton>
+                </ButtonWrap>
+              </NumWrap>
+              <Divider />
+              <PriceWrap>
+                <PriceTit>판매가</PriceTit>
+                <Price>{product.price * num}원</Price>
+              </PriceWrap>
+            </DeliveryInfo>
+          </ProductInfo>
+        </ProductDetailInfo>
+      )}
+    </>
   );
 };
 

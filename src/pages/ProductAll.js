@@ -21,7 +21,6 @@ const LoadingNetYet = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
   height: 100vh;
 `;
 

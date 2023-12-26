@@ -22,27 +22,26 @@ const Inner = styled.div`
 function App() {
   const [query, setQuery] = useSearchParams();
   //기본값 false임 다 끝나면 바꿔놓을 것
-  const [authenticate, setAuthenticate] = useState(true);
+  const [authenticate, setAuthenticate] = useState(false);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const getProducts = async () => {
     const searchQuery = query.get("q") || "";
-    // console.log("searchQuery : ", searchQuery);
     dispatch(productAction.getProduct(searchQuery));
     setLoading(false);
   };
   useEffect(() => {
     getProducts();
-  }, [query]);
+  }, []);
 
   useEffect(() => {
     setPageTitle("JAJU");
   }, []);
 
-  const productList = useSelector((state) => state.products.productList);
-  const kitchenwareList = productList?.kitchenware;
-  const fashionList = productList?.fashion;
-  const snackList = productList?.snack;
+  const productList = useSelector((state) => state.products);
+  const kitchenwareList = productList?.kitchenwareList;
+  const fashionList = productList?.fashionList;
+  const snackList = productList?.snackList;
   return (
     <div>
       <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />

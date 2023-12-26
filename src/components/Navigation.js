@@ -73,7 +73,6 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
     navigate("/");
   };
   const onCheckEnter = (e) => {
-    console.log(e.target.value);
     if (e.key === "Enter") {
       navigate(`?q=${e.target.value}`);
     }
@@ -125,8 +124,9 @@ const Navigation = ({ authenticate, setAuthenticate }) => {
             <img
               src="https://cdn-fo.sivillage.com/fo/assets/jaju/image/icons/30x30/ico-common-30-shoppingbag.svg"
               alt=""
+              style={{ opacity: "0.4" }}
             />
-            <Desc color="#555">쇼핑백</Desc>
+            <Desc color="#ccc">쇼핑백</Desc>
           </Icon>
         </HeaderInner>
       </Header>

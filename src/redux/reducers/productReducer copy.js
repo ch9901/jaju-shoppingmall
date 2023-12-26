@@ -11,7 +11,7 @@ const productReducer = (state = initialState, action) => {
         ...state,
         kitchenwareList: payload.kitchenwareList,
         fashionList: payload.fashionList,
-        snackList: payload.snackList,
+        snack: payload.snackList,
       };
     default:
       return { ...state };

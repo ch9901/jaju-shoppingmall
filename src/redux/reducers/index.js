@@ -6,5 +6,5 @@ import getProductDetailReducer from "./getProductDetailReducer";
 export default combineReducers({
   products: productReducer,
   auth: authenticateReducer,
-  productDetail: getProductDetailReducer,
+  // productDetail: getProductDetailReducer,
 });

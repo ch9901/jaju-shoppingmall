@@ -45,7 +45,7 @@ const NavigationMenu = () => {
         width={20}
       />
       <MenuActive as={"a"} href="/">
-        전체카테고리*
+        전체상품*
       </MenuActive>
       <MenuActive as={"a"} href="/products/kitchenware">
         주방용품*

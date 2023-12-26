@@ -74,7 +74,6 @@ const CardWrap = styled.div`
 `;
 const ProductCard = ({ itemList }) => {
   const lists = itemList;
-
   return (
     <CardWrap>
       {lists?.map((item, index) => (

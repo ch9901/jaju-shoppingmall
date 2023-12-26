@@ -2,11 +2,18 @@ import React, { useEffect } from "react";
 import PartTitle from "../components/PartTitle";
 import ProductcardWrap from "../components/ProductcardWrap";
 import styled from "styled-components";
+import { ClipLoader } from "react-spinners";
 
 const ProductCategory = styled.div`
   margin-bottom: 150px;
 `;
 
+const LoadingNetYet = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+`;
 const Kitchenware = ({ kitchenwareList, loading }) => {
   return (
     <ProductCategory>
