@@ -12,6 +12,7 @@ import Kitchenware from "./pages/Kitchenware";
 import Fashion from "./pages/Fashion";
 import Snack from "./pages/Snack";
 import { useSearchParams } from "react-router-dom";
+import { setPageTitle } from "./util";
 
 const Inner = styled.div`
   padding: 20px 100px;
@@ -33,6 +34,10 @@ function App() {
   useEffect(() => {
     getProducts();
   }, [query]);
+
+  useEffect(() => {
+    setPageTitle("JAJU");
+  }, []);
 
   const productList = useSelector((state) => state.products.productList);
   const kitchenwareList = productList?.kitchenware;
@@ -63,7 +68,7 @@ function App() {
             element={<Kitchenware kitchenwareList={kitchenwareList} />}
           />
           <Route
-            path="/products/kitchenware/:id"
+            path="/products/:productCategory/:id"
             element={
               <PrivateRoute
                 authenticate={authenticate}
@@ -76,26 +81,8 @@ function App() {
             element={<Fashion fashionList={fashionList} />}
           />
           <Route
-            path="/products/fashion/:id"
-            element={
-              <PrivateRoute
-                authenticate={authenticate}
-                setAuthenticate={setAuthenticate}
-              />
-            }
-          />
-          <Route
             path="/products/snack"
             element={<Snack snackList={snackList} />}
-          />
-          <Route
-            path="/products/snack/:id"
-            element={
-              <PrivateRoute
-                authenticate={authenticate}
-                setAuthenticate={setAuthenticate}
-              />
-            }
           />
         </Routes>
       </Inner>

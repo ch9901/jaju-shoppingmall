@@ -2,16 +2,12 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import PartTitle from "../components/PartTitle";
 import ProductcardWrap from "../components/ProductcardWrap";
-import { setPageTitle } from "../util";
 
 const ProductCategory = styled.div`
   margin-bottom: 150px;
 `;
 
 const Fashion = ({ fashionList }) => {
-  useEffect(() => {
-    setPageTitle("JAJU - Fashion👕");
-  }, []);
   return (
     <ProductCategory>
       <PartTitle
